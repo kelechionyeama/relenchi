@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: 'Hanson';
+  src: url('./fonts/Hanson-Bold.otf') format('opentype'),
+       url('./fonts/Hanson-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Inter Tight", serif;
   color: white;
+}
+.hanson {
+  font-family: "Hanson", serif !important;
 }
 body {
   background-color: black;
@@ -29,6 +40,10 @@ body {
 .delay-200ms {
   animation-delay: 0.2s;
   --animate-delay: 0.2s;
+}
+.delay-500ms {
+  animation-delay: 0.5s;
+  --animate-delay: 0.5s;
 }
 .light-rays {
   position: absolute;

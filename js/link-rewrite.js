@@ -1,5 +1,5 @@
 (function rewrite_all_links() {
-  if (window.location.hostname !== '127.0.0.1') {
+  if (window.location.hostname === "alfred-onuada.github.io") {
     const links = document.querySelectorAll('a[href]');
     links.forEach(link => {
       const originalHref = link.getAttribute('href');
