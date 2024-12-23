@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Inter Tight", serif;
+  color: white;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+@keyframes bounce-custom {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: translateY(-25px);
+    animation-timing-function: linear;
+  }
+}
+.bounce {
+  animation: bounce-custom 4s infinite;
+}
+.delay-100ms {
+  animation-delay: 0.1s;
+  --animate-delay: 0.1s;
+}
+.delay-200ms {
+  animation-delay: 0.2s;
+  --animate-delay: 0.2s;
+}
+.light-rays {
+  position: absolute;
+  bottom: 0%;
+  background: radial-gradient(circle at 50% 160%, #3d0121 25%, #000000 52%);
+  width: 200%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* T&C page */
+.terms-main h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.terms-main h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.terms-main p {
+  font-weight: 200;
+  color: #a8a8a8;
+}
+.terms-main h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: clamp(1.25rem, 1.206rem + .1761vw, 1.375rem);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.text-gradient {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #ffc46c, #ee9aeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
