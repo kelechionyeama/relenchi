@@ -1,19 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
-  font-family: 'Hanson';
-  src: url('./fonts/Hanson-Bold.otf') format('opentype'),
-       url('./fonts/Hanson-Bold.ttf') format('truetype');
+  font-family: 'pangaia';
+  src: url('./fonts/Pangaia Bold Font.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pp-mori';
+  src: url('./fonts/PP Mori Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pp-mori';
+  src: url('./fonts/PP Mori Regular Font.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pp-mori';
+  src: url('./fonts/PP Mori SemiBold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Inter Tight", serif;
+  font-family: "pp-mori", serif;
   color: white;
 }
-.hanson {
-  font-family: "Hanson", serif !important;
+.pangaia {
+  font-family: "pangaia", serif !important;
 }
 body {
   background-color: black;

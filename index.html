@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/gradient-border.js"></script>
 </head>
 <body>
   <div class="flex justify-between flex-col h-[100vh] p-[20px]">
@@ -24,21 +25,27 @@
     <div class="flex justify-center items-center flex-wrap">
       <a href="apps/wizard.html">
         <div class="group relative animate__animated animate__zoomInUp animate__faster transform rotate-[-10deg] translate-x-[10px] md:translate-x-[25px] hover:scale-[1.2]">
-          <img loading="eager" class="h-[40vw] w-[40vw] md:w-[16vw] md:h-[16vw] bounce transform" src="img/wizard.jpeg" alt="Social Wizard">
-          <div class="group-hover:top-[-80px] md:group-hover:top-[-100px] py-[.75rem] px-[1rem] absolute left-1/2 transform transition-all duration-300 -translate-x-1/2 text-nowrap z-[-10] top-0 border border-[#313131] bg-[#1a1a1a] rounded-full">
+          <div class="p-[10px] rounded-lg relative bg-transparent bounce transform">
+            <img loading="eager" class="h-[38vw] w-[38vw] md:w-[16vw] md:h-[16vw] rounded-lg" src="img/wizard.jpeg" alt="Social Wizard" onload="createImageBorder(this)">
+          </div>
+          <div class="group-hover:top-[-80px] md:group-hover:top-[-100px] py-[.75rem] px-[1rem] absolute left-1/2 transform transition-all duration-300 -translate-x-1/2 text-nowrap z-[-10] top-[50px] border border-[#313131] bg-[#1a1a1a] rounded-full">
             <p class="text-[.75rem] md:text-[1rem] font-extralight">Social Wizard</p>
           </div>
         </div>
       </a>
       <div class="group relative animate__animated animate__zoomInUp delay-100ms animate__faster transform rotate-[10deg] hover:scale-[1.2] blur-md">
-        <img loading="eager" class="h-[40vw] w-[40vw] md:w-[16vw] md:h-[16vw] bounce delay-100ms transform" src="img/yellow.webp" alt="Demo 2 App Logo">
-        <div class="group-hover:top-[-80px] md:group-hover:top-[-100px] py-[.75rem] px-[1rem] absolute left-1/2 transform transition-all duration-300 -translate-x-1/2 text-nowrap z-[-10] top-0 border border-[#313131] bg-[#1a1a1a] rounded-full">
+        <div class="p-[10px] rounded-lg relative bg-transparent bounce transform delay-100ms">
+          <img loading="eager" class="h-[38vw] w-[38vw] md:w-[16vw] md:h-[16vw] rounded-lg" src="img/yellow.webp" alt="Demo 2 App Logo" onload="createImageBorder(this)">
+        </div>
+        <div class="group-hover:top-[-80px] md:group-hover:top-[-100px] py-[.75rem] px-[1rem] absolute left-1/2 transform transition-all duration-300 -translate-x-1/2 text-nowrap z-[-10] top-[50px] border border-[#313131] bg-[#1a1a1a] rounded-full">
           <p class="text-[.75rem] md:text-[1rem] font-extralight">Demo App 1</p>
         </div>
       </div>
       <div class="group relative animate__animated animate__zoomInUp delay-200ms animate__faster transform rotate-[-5deg] hover:scale-[1.2] blur-md">
-        <img loading="eager" class="h-[40vw] w-[40vw] md:w-[16vw] md:h-[16vw] bounce delay-200ms transform" src="img/blue.webp" alt="Demo 3 App Logo">
-        <div class="group-hover:top-[-80px] md:group-hover:top-[-100px] py-[.75rem] px-[1rem] absolute left-1/2 transform transition-all duration-300 -translate-x-1/2 text-nowrap z-[-10] top-0 border border-[#313131] bg-[#1a1a1a] rounded-full">
+        <div class="p-[10px] rounded-lg relative bg-transparent bounce transform delay-200ms">
+          <img loading="eager" class="h-[38vw] w-[38vw] md:w-[16vw] md:h-[16vw] rounded-lg" src="img/blue.webp" alt="Demo 3 App Logo" onload="createImageBorder(this)">
+        </div>
+        <div class="group-hover:top-[-80px] md:group-hover:top-[-100px] py-[.75rem] px-[1rem] absolute left-1/2 transform transition-all duration-300 -translate-x-1/2 text-nowrap z-[-10] top-[50px] border border-[#313131] bg-[#1a1a1a] rounded-full">
           <p class="text-[.75rem] md:text-[1rem] font-extralight">Demo App 2</p>
         </div>
       </div>
